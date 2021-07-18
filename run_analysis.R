@@ -16,7 +16,7 @@ runAnalysis <- function() {
   
   averageDataSet <- tidyData %>% group_by(test, subject) %>% summarize_all(mean)
   
-  write.csv(averageDataSet, "averageDataSet.csv", row.names = FALSE)
+  write.table(averageDataSet, "averageDataSet.csv", row.names = FALSE)
 }
 
 
