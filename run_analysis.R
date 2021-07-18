@@ -24,6 +24,7 @@ runAnalysis <- function() {
 loadPackages <- function() {
   library(data.table)
   library(dplyr)
+  library(readr)
 }
 
 
